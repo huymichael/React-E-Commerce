@@ -8,7 +8,7 @@ const Header = ({currentUser}) => (
     <React.Fragment>
         <div className='header'>
             <Link className='logo-container' to='/'>
-                <Logo class='logo'/>
+                <Logo className='logo'/>
             </Link>
             <div className='options'>
                 <Link to='/shop' className='option'>SHOP</Link>
