@@ -1,8 +1,15 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     font-family: 'Open Sans Condensed', sans-serif;
     padding: 20px 60px
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
