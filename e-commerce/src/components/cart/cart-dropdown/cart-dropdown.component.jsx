@@ -8,7 +8,7 @@ import {createStructuredSelector} from 'reselect';
 import {withRouter} from 'react-router-dom';
 import {toggleCart} from '../../../redux/cart/cart.action';
 
-const CartDropdown = ({cartItems, history,dispatch}) => (
+const CartDropdown = ({cartItems, history, dispatch}) => (
     <div className='cart-dropdown'>
         <div className='cart-items'>
             {
