@@ -4,6 +4,7 @@ import CollectionPreview from '../../components/preview-collection/collection-pr
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import {selectShopCollections} from '../../redux/shop/shop.selector';
+import CollectionsOverview from '../../components/collections/collections-overview/collections-overview.component';
 
 
 const ShopPage = ({collections}) => {
@@ -11,9 +12,7 @@ const ShopPage = ({collections}) => {
     return (
         <React.Fragment>
             <div className='shop-page'>
-                {collections.map(({id, ...collectionProps}) => (
-                    <CollectionPreview key={id} {...collectionProps}/>
-                ))}
+                <CollectionsOverview/>
             </div>
         </React.Fragment>
     );
