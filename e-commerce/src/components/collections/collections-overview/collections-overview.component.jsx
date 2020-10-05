@@ -4,7 +4,6 @@ import CollectionPreview from '../../preview-collection/collection-preview.compo
 import {connect} from 'react-redux';
 import {createStructuredSelector} from 'reselect';
 import {selectShopCollections} from '../../../redux/shop/shop.selector';
-
 const CollectionsOverview = ({collections}) => (
     <div className='collections-overview'>
         {collections.map(({id, ...collectionProps}) => (
